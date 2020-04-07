@@ -10,11 +10,7 @@ const TransactionList = () => {
       <h3>History</h3>
       <ul id='list' className='list'>
         {transactions.map((transaction) => (
-          <li className=''>
-            {transaction.amount}
-            Cash <span></span>
-            <button className='delete-button'>x</button>
-          </li>
+          <Transaction key={transaction.id} transaction={transaction} />
         ))}
       </ul>
     </>
