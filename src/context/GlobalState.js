@@ -9,3 +9,4 @@ const initialState = {
   ],
 }
 
+export const GlobalContext = createContext(initialState)
