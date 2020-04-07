@@ -6,7 +6,10 @@ const Transaction = ({ transaction }) => {
   return (
     <li className=''>
       {transaction.text}
-      Cash <span>{transaction.amount}</span>
+      Cash{' '}
+      <span>
+        {sign}${Math.abs(transaction.amount)}
+      </span>
       <button className='delete-button'>x</button>
     </li>
   )
