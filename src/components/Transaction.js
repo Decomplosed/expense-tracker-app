@@ -1,6 +1,8 @@
 import React from 'react'
 
-const Transaction = () => {
+const Transaction = ({ transaction }) => {
+  const sign = transaction.amount < 0 ? '-' : '+'
+
   return (
     <li className=''>
       {transaction.text}
