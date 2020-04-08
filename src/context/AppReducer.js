@@ -1,6 +1,6 @@
 export default (state, action) => {
   switch (action.type) {
-    case 'DETELE_TRANSACTION':
+    case 'DELETE_TRANSACTION':
       return {
         ...state,
         transactions: state.transactions.filter(
