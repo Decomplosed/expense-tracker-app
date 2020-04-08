@@ -7,6 +7,18 @@ const AddTransaction = () => {
 
   const { addTransaction } = useContext(GlobalContext)
 
+  const onSubmit = (e) => {
+    e.preventDefault()
+
+    const newTransaction = {
+      id: Math.floor(Math.random() * 10000000),
+      text,
+      amount: +amount,
+    }
+
+    addTransaction(newTransaction)
+  }
+
   return (
     <>
       <h3>Add new transaction</h3>
