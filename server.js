@@ -6,6 +6,8 @@ const connectDB = require('./config/db')
 
 dotenv.config({ path: './config/config.env' })
 
+connectDB()
+
 const transactions = require('./routes/transactions')
 
 const app = express()
