@@ -15,5 +15,16 @@
   "bugs": {
     "url": "https://github.com/Decomplosed/expense-tracker-app/issues"
   },
-  "homepage": "https://github.com/Decomplosed/expense-tracker-app#readme"
+  "homepage": "https://github.com/Decomplosed/expense-tracker-app#readme",
+  "dependencies": {
+    "colors": "^1.4.0",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "mongoose": "^5.9.7",
+    "morgan": "^1.10.0"
+  },
+  "devDependencies": {
+    "concurrently": "^5.1.0",
+    "nodemon": "^2.0.2"
+  }
 }
