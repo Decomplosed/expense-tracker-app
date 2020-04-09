@@ -47,8 +47,11 @@ export const GlobalProvider = ({ children }) => {
     <GlobalContext.Provider
       value={{
         transactions: state.transactions,
+        getTransactions,
         deleteTransaction,
         addTransaction,
+        error: state.error,
+        loading: state.loading,
       }}
     >
       {children}
