@@ -49,17 +49,17 @@ export const GlobalProvider = ({ children }) => {
     const config = {
       headers: {
         'Content-Type': 'application/json',
-      }
+      },
     }
 
     try {
-      const res = await.post('/api/v1/transaction', transaction, config)
-    } catch(err) {}
+      const res = await axios.post('/api/v1/transaction', transaction, config)
 
-    dispatch({
-      type: 'ADD_TRANSACTION',
-      payload: transaction,
-    })
+      dispatch({
+        type: 'ADD_TRANSACTION',
+        payload: transaction,
+      })
+    } catch (err) {}
   }
 
   return (
