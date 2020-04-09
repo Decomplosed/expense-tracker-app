@@ -49,8 +49,12 @@ export const GlobalProvider = ({ children }) => {
     const config = {
       headers: {
         'Content-Type': 'application/json',
-      },
+      }
     }
+
+    try {
+      const res = await.post('/api/v1/transaction', transaction, config)
+    } catch(err) {}
 
     dispatch({
       type: 'ADD_TRANSACTION',
