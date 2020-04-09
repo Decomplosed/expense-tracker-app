@@ -8,10 +8,12 @@ const TransactionSchema = new mongoose.Schema({
   },
   amount: {
     type: Number,
-    required: [true, 'Please add a postivie or negative number']
+    required: [true, 'Please add a postivie or negative number'],
   },
   createdAt: {
     type: Date,
-    default: Date.now
-  }
+    default: Date.now,
+  },
 })
+
+module.exports = TransactionSchema
